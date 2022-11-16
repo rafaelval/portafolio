@@ -2,7 +2,7 @@
       display: flex;
       border: solid 1px black;
       background-color: rgba(200, 224, 155, 0.384);
-      width: 85vw;
+      /* width: 85vw; */
       align-items: center;
 }
 
@@ -11,7 +11,8 @@
       background-color: rgba(87, 94, 75, 0.384);
       padding: 0 30px;
       margin-right: 20px;
-      max-width: 45vw;
+      box-sizing: border-box;
+      /* max-width: 45vw; */
 }
 
 .card p{
@@ -21,12 +22,9 @@
 }
 
 .photo {
-      max-height: 50vh;
       min-height: 550px;
-      max-width: 50vw;
       min-width: 550px;
       border: solid black 1px;
-      box-sizing: border-box;
       border-radius: 280px;
-      top: 15%;
+      background-color: rgba(129, 41, 41, 0.384);
 }
