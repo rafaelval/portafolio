@@ -1,5 +1,5 @@
 import { routes } from "../../routes/routes";
-import { labels } from "./navbar.labels";
+import { labels } from "../../helpers/navbar.labels";
 import { BiHomeAlt } from "react-icons/bi";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { RiSlideshowLine } from "react-icons/ri";

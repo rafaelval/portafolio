@@ -1,4 +1,4 @@
-import { labels } from "./home.labels";
+import { labels } from "../../helpers/home.labels";
 import styles from "./Home.module.css";
 
 export const Home = () => {

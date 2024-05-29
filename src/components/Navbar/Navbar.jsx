@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import styles from "./Navbar.module.css";
 import { menu } from "./menu";
-import { labels } from "./navbar.labels";
+import { labels } from "../../helpers/navbar.labels";
 
 export const Navbar = () => {
   const navigate = useNavigate();
