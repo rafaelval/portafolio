@@ -1,4 +1,4 @@
-export * from './Areas'
+export * from './Skills'
 export * from './Home'
 export * from './Proyectos'
 export * from './Contact'
