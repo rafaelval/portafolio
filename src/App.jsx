@@ -1,5 +1,4 @@
 import { NavBar} from "./components/Navbar/Navbar"
-import styles from './App.module.css'
 import { Route, Routes, useNavigate } from "react-router-dom"
 import { Home, Proyectos, Contact, NotFound, Skills } from "./pages"
 import { routes } from "./routes/routes"
@@ -16,7 +15,7 @@ export const App = () => {
   
 
   return (
-    <div className={styles.princ}>
+    <div className="flex">
       <NavBar/>
       <Routes>
       <Route path={routes.home} element={<Home/>}/>

@@ -1,5 +1,20 @@
 .contPrinc {
       display: flex;
+      flex-direction: column;
+      background-color: rgba(129, 148, 93, 0.384);
+      width: 85vw;
+      height: 100vh;
+}
+
+.contPrinc h1 {
+      padding-top: 10rem;
+      margin-left: 5rem;
+      font-size: 4em;
+      font-weight: bolder;
+}
+
+.contSec{
+      display: flex;
       background-color: rgba(200, 224, 155, 0.384);
       width: 85vw;
       align-items: center;

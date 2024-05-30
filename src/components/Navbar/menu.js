@@ -1,29 +1,29 @@
 import { routes } from "../../routes/routes";
 import { labels } from "../../helpers/navbar.labels";
-import { BiHomeAlt } from "react-icons/bi";
-import { MdOutlineDeveloperMode } from "react-icons/md";
-import { RiSlideshowLine } from "react-icons/ri";
-import { GrContact } from "react-icons/gr";
+import { FaHome } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
+import { PiProjectorScreenChartFill } from "react-icons/pi";
+import { MdContactMail } from "react-icons/md";
 
 export const menu = [
       {
             route: routes.home,
             name: labels.home_text,
-            icon: <BiHomeAlt/>
+            icon: <FaHome/>
       },
       {
             route: routes.areas,
             name: labels.skills_text,
-            icon: <MdOutlineDeveloperMode/>
+            icon: <FaCode/>
       },
       {
             route: routes.proyectos,
             name: labels.projects_text,
-            icon: <RiSlideshowLine/>
+            icon: <PiProjectorScreenChartFill/>
       },
       {
             route: routes.contacto,
             name: labels.contact_text,
-            icon: <GrContact/>
+            icon: <MdContactMail/>
       },
 ]

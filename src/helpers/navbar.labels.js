@@ -3,5 +3,5 @@ export const labels = {
       skills_text: 'Habilidades',
       projects_text: 'Proyectos',
       contact_text: 'Contacto',
-      title_text: 'DESARROLLO FRONT END',
+      title_text: 'DESARROLLO WEB FULLSTACK',
 }
