@@ -1,3 +1,6 @@
+#contPrinc{
+  background-image: url("/public/background.jpg");
+}
 
 .listCont {
   width: fit-content;
@@ -9,7 +12,7 @@
   padding: 0;
   margin: 20px;
   margin: 50px;
-  background-color: rgb(141, 141, 141);
+  background-color: rgba(141, 141, 141, 0.5);
   width: fit-content;
   border-radius: 15px;
 }
@@ -22,8 +25,12 @@
   justify-content: center;
   text-align: center;
   margin: 10px;
-  background-color: rgb(78, 78, 78);
+  background-color: theme("colors.secondary");
   width: 150px;
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .listCont h3 {

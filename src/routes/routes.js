@@ -1,5 +1,5 @@
 export const routes = {
-  home: "/inicio",
+  home: "/",
   areas: "/areas",
   proyectos: "/proyectos",
   contacto: "/contacto",

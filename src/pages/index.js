@@ -1,5 +1,5 @@
 export * from './Skills'
 export * from './Home'
-export * from './Proyectos'
+export * from './Projects'
 export * from './Contact'
 export * from './NotFound'

@@ -1,41 +1,56 @@
 .contPrinc {
-      display: flex;
-      flex-direction: column;
-      background-color: rgba(129, 148, 93, 0.384);
-      width: 85vw;
-      height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  width: 85vw;
+  height: 100vh;
 }
 
-.contPrinc h1 {
-      padding-top: 10rem;
-      margin-left: 5rem;
-      font-size: 4em;
-      font-weight: bolder;
+.patua {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  font-style: normal;
+  color: white;
+  font-size: 6em;
+  padding-top: 10rem;
+  margin-left: 5rem;
 }
 
-.contSec{
-      display: flex;
-      background-color: rgba(200, 224, 155, 0.384);
-      width: 85vw;
-      align-items: center;
-      height: 100vh;
+.kode_mono {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  color: white;
+  font-size: 1.3em;
+}
+
+.kode_mono_title{
+      font-size: 2em;
+      color: theme("colors.primary");
+    }
+
+.contSec {
+  display: flex;
+  
+  width: 85vw;
+  align-items: center;
+  height: 100vh;
 }
 
 .card {
-      background-color: rgba(87, 94, 75, 0.384);
-      padding: 0 30px;
-      margin-right: 20px;
-      box-sizing: border-box;
-      /* max-width: 45vw; */
+  
+  padding: 0 30px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  /* max-width: 45vw; */
 }
 
-.card p{
-      background-color: rgba(71, 28, 55, 0.384);
-}
+
 
 .photo {
-      min-height: 450px;
-      min-width: 450px;
-      border-radius: 280px;
-      background-color: rgba(129, 41, 41, 0.384);
+  min-height: 450px;
+  min-width: 450px;
+  border-radius: 280px;
+  background-color: rgba(129, 41, 41, 0.384);
 }

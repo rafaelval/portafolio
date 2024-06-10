@@ -8,6 +8,11 @@ module.exports = {
       width: {
         '85': '85%',
       },
+      colors: {
+        'primary': '#ca8a04',
+        'secondary': '#272727',
+        'terciary': '#18181b'
+      }
     },
   },
   plugins: [],

@@ -1,33 +1,37 @@
 .contPrinc {
-      background-color: #272727;
-      width: 15vw;
-      height: 100vh;
+  background-color: theme("colors.secondary");
+  width: 15vw;
+  height: 100vh;
+}
+
+.patua {
+  font-family: "Patua One", serif;
+  font-style: italic;
+  font-size: 1em;
+  color: rgb(231, 222, 204);
+  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 4px theme("colors.primary"),
+    0 0 5px theme("colors.primary"), 0 0 6px theme("colors.primary"),
+    0 0 8px theme("colors.primary"), 0 0 9px theme("colors.primary");
 }
 
 .logo {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      padding-top: 40px;
-    margin-bottom: 4rem
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 40px;
+  margin-bottom: 4rem;
 }
 .itemmenu p {
-      cursor: pointer;
-      padding-left: 20px;
-      box-sizing: border-box;
-      background-color: rgba(98, 146, 146, 0.384);
-}
-
-.contPrinc img {
-      background-color: rgba(87, 121, 48, 0.384);
+  cursor: pointer;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .businessCard {
-      display: flex;
-      justify-content: center;
-      background-color: rgba(0, 255, 255, 0.384);
+  display: flex;
+  justify-content: center;
 }
 
 .businessCard p {
-      font-size: 1rem;
+  font-size: 1rem;
 }
