@@ -144,7 +144,3 @@ export const skillsToLearn = [
       },
 ]
 
-export const labels = {
-      known_skills:"Habilidades conocidas",
-      skills_to_learn:"Habilidades pendientes o en progreso"
-}

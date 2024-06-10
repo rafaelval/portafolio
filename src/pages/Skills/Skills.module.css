@@ -2,6 +2,20 @@
   background-image: url("/public/background.jpg");
 }
 
+
+.patua {
+  font-family: "Patua One", serif;
+  
+  font-style: normal;
+  color: theme("colors.primary");
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #adadad,
+    -1px  1px 0 #616060,
+     1px  1px 0 #3a3a3a;
+  font-size: 2em;
+}
+
 .listCont {
   width: fit-content;
   display: flex;

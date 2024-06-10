@@ -1,29 +1,29 @@
 import { routes } from "../../routes/routes";
-import { labels } from "../../helpers/navbar.labels";
+import { labels } from "../../helpers/labels";
 import { FaHome } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 import { PiProjectorScreenChartFill } from "react-icons/pi";
 import { MdContactMail } from "react-icons/md";
 
-export const menu = [
+export const getMenu = (lang) => [
       {
             route: routes.home,
-            name: labels.home_text,
+            name: labels[lang]?.home_text,
             icon: <FaHome/>
       },
       {
             route: routes.areas,
-            name: labels.skills_text,
+            name: labels[lang]?.skills_text,
             icon: <FaCode/>
       },
       {
             route: routes.proyectos,
-            name: labels.projects_text,
+            name: labels[lang]?.projects_text,
             icon: <PiProjectorScreenChartFill/>
       },
       {
             route: routes.contacto,
-            name: labels.contact_text,
+            name: labels[lang]?.contact_text,
             icon: <MdContactMail/>
       },
 ]

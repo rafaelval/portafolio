@@ -2,23 +2,27 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../../images/logo.png";
 import styles from "./Navbar.module.css";
-import { menu } from "./menu";
-import { labels } from "../../helpers/navbar.labels";
+import {getMenu} from './menu'
+import { labels } from "../../helpers/labels";
+import { useSelector } from "react-redux";
 
 export const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const {lang} = useSelector(state=>state)
 
   function handleChangePage(page) {
     navigate(page);
   }
+
+  const menu = getMenu(lang)
 
   return (
     <div className={styles.contPrinc}>
       <div className={styles.logo}>
         <img src={logo} alt="" />
         <div className={styles.businessCard}>
-          <p className={styles.patua}>{labels.title_text}</p>
+          <p className={styles.patua}>{labels[lang].title_text}</p>
         </div>
       </div>
       {menu.map((el, i) => (
