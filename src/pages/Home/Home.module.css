@@ -1,7 +1,6 @@
 .contPrinc {
   display: flex;
   flex-direction: column;
-
   width: 85vw;
   height: 100vh;
 }
@@ -11,7 +10,7 @@
   font-weight: bolder;
   font-style: normal;
   color: white;
-  font-size: 6em;
+  font-size: 4em;
   padding-top: 10rem;
   margin-left: 5rem;
 }
@@ -46,18 +45,20 @@
   /* max-width: 45vw; */
 }
 
+.photo img{
+    width:100%;
+    object-fit: cover;
+}
 
 
 .photo {
   width: 100%;
-  max-width: 450px; /* Ancho máximo para evitar que el contenedor crezca demasiado */
-  height: auto; /* Altura automática para mantener la proporción */
-  min-height: 450px;
-  border-radius: 50%; /* Cambiado a 50% para un círculo perfecto */
-  overflow: hidden; /* Ocultar cualquier desbordamiento */
-  background-image: url(../../images/foto.jpg);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
+  max-width: 450px;
+  height: auto; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  background-size: cover; 
+  background-position: center; 
   margin-right: 40px;
-  border: 10px solid theme("colors.primary");
+  border: 7px solid theme("colors.primary");
 }

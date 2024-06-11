@@ -16,6 +16,12 @@ export const labels = {
     title_text: "DESARROLLO WEB FULLSTACK",
     known_skills: "Habilidades conocidas",
     skills_to_learn: "Habilidades pendientes o en progreso",
+    how_contact:"¿CÓMO CONTACTARME?",
+    wish_contact:"Si desea contactarme, puede hacerlo a través de cualquiera de los siguientes medios:",
+    mobile:"Teléfono móvil:",
+    phone_number:"(+57)3006703425",
+    email:"Correo electrónico:",
+    mail:"rafael.valbuena.restrepo@gmail.com"
   },
   en: {
     about: "About me",
@@ -34,5 +40,11 @@ export const labels = {
     title_text: "FULLSTACK WEB DEVELOPMENT",
     known_skills: "Known skills",
     skills_to_learn: "Pending or in progress skills",
+    how_contact:"¿HOW TO CONTACT ME?",
+    wish_contact:"If you wish to contact me, you can do so through any of the following means:",
+    mobile:"CellPhone",
+    phone_number:"(+57)3006703425",
+    email:"Email:",
+    mail:"rafael.valbuena.restrepo@gmail.com"
   },
 };
