@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 export const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const {lang} = useSelector(state=>state)
+  const lang = useSelector(state=>state.lang)
 
   function handleChangePage(page) {
     navigate(page);

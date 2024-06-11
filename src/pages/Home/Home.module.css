@@ -49,8 +49,15 @@
 
 
 .photo {
+  width: 100%;
+  max-width: 450px; /* Ancho máximo para evitar que el contenedor crezca demasiado */
+  height: auto; /* Altura automática para mantener la proporción */
   min-height: 450px;
-  min-width: 450px;
-  border-radius: 280px;
-  background-color: rgba(129, 41, 41, 0.384);
+  border-radius: 50%; /* Cambiado a 50% para un círculo perfecto */
+  overflow: hidden; /* Ocultar cualquier desbordamiento */
+  background-image: url(../../images/foto.jpg);
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  margin-right: 40px;
+  border: 10px solid theme("colors.primary");
 }

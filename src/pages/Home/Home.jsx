@@ -3,7 +3,7 @@ import { labels } from "../../helpers/labels";
 import styles from "./Home.module.css";
 
 export const Home = () => {
-  const { lang } = useSelector((state) => state);
+  const lang  = useSelector((state) => state.lang);
 
   return (
     <div className={styles.contPrinc}>

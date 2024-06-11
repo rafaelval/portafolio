@@ -8,7 +8,7 @@ export const labels = {
     content_text_2:
       "Siempre estoy abierto a escuchar a otros y dispuesto a dar aportes relevantes, me gusta ver un equipo que trabaja unido.",
     content_text_3:
-      "Me enfoco en el desarrollo web basado en las tecnologías mas vistas actualmente, con crecimiento personal diario en cuanto a aprendizaje de las mismas se refiere, e investigando nuevas posibilidades a diario.",
+      "Me enfoco en el desarrollo web basado en las tecnologías mas vistas en el momento, con crecimiento personal permanente en cuanto a aprendizaje de las mismas se refiere, e investigando nuevas posibilidades a diario.",
     home_text: "Inicio",
     skills_text: "Habilidades",
     projects_text: "Proyectos",
@@ -26,7 +26,7 @@ export const labels = {
     content_text_2:
       "I am always open to listening to others and willing to give relevant contributions, I like to see a team that works together.",
     content_text_3:
-      "I focus on web development based on the most commonly seen technologies currently, with daily personal growth in terms of learning them, and investigating new possibilities daily.",
+      "I focus on web development based on the most popular technologies at the moment, with permanent personal growth in terms of learning them, and investigating new possibilities everyday.",
     home_text: "Home",
     skills_text: "Skills",
     projects_text: "Projects",
