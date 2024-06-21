@@ -3,13 +3,29 @@ import { Route, Routes } from "react-router-dom";
 import { Home, Contact, NotFound, Skills } from "./pages";
 import { routes } from "./routes/routes";
 import { Projects } from "./pages/Projects/Projects";
+import { GiHamburgerMenu } from "react-icons/gi";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
+import styles from './App.module.css'
+import { useDispatch, useSelector } from "react-redux";
+import { handleMenu } from "./redux/actions";
 
 export const App = () => {
+  const dispatch =  useDispatch()
+
+  const menu = useSelector((state) =>state.menuOpen)
+
+  const toggleMenu = ()=>{
+      dispatch(handleMenu(!menu))
+  }
+
   return (
-    <div className="flex h-screen bg-center bg-cover">
+    <div className="flex">
+      <GiHamburgerMenu className={styles.hamburguerIcon} onClick={()=>toggleMenu()}/>
+        {
+          menu && 
       <NavBar />
-      <LanguageSwitcher/>
+        }
+      <LanguageSwitcher />
       <Routes>
         <Route path={routes.home} element={<Home />} />
         <Route path={routes.areas} element={<Skills />} />

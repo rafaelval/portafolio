@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import { labels } from "../../helpers/labels";
 import styles from "./Home.module.css";
-import foto from '../../images/foto.jpg'
+import foto from "../../images/foto.jpg";
 
 export const Home = () => {
-  const lang  = useSelector((state) => state.lang);
+  const lang = useSelector((state) => state.lang);
 
   return (
     <div className={styles.contPrinc}>

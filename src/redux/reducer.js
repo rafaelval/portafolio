@@ -1,8 +1,8 @@
-const ES= "ES"
-const EN= "EN"
+import { EN, ES, MENUTRIGGER } from "./constants";
 
 const initialState = {
   lang: "es",
+  menuOpen: true,
 };
 
 const reducer = (state = initialState, action) => {
@@ -11,9 +11,12 @@ const reducer = (state = initialState, action) => {
       return { ...state, lang: "es" };
     case EN:
       return { ...state, lang: "en" };
+    case MENUTRIGGER:
+      return { ...state, menuOpen: action.payload };
+    
     default:
       return state;
   }
 };
 
-export default reducer
+export default reducer;

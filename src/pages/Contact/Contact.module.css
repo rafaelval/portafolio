@@ -1,6 +1,10 @@
 .contPrinc {
   width: 85vw;
-  height: 100vh;
+  margin-left: 250px;
+}
+
+.contPrinc svg {
+  font-size: 2em;
 }
 
 .kode_mono {
@@ -14,7 +18,7 @@
   margin-top: 30px;
 }
 
-.contLinks{
+.contLinks {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -26,38 +30,73 @@
 }
 
 .patua {
-      font-family: "Patua One", serif;
-      font-weight: bolder;
-      font-style: normal;
-      color: white;
-      font-size: 3em;
-      padding-top: 10rem;
-      margin-left: 5rem;
-    }
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  font-style: normal;
+  color: white;
+  font-size: 3em;
+  padding-top: 10rem;
+  margin-left: 5rem;
+}
 
-    .divLine {
-      border: 1px  solid theme("colors.primary");
-      opacity: calc(30%) ;
-    }
+.divLine {
+  border: 1px solid theme("colors.primary");
+  opacity: calc(30%);
+}
 
-    .contContact {
-      display: flex;
-      justify-content: flex-start;
-      height: 20%;
-      
-    }
+.contContact {
+  display: flex;
+  justify-content: flex-start;
+  height: 20%;
+}
 
-    .contact {
-      border-right: 1px solid rgba(153, 82, 31, 0.281);
-      padding: 2%;
-    }
+.contact {
+  border-right: 1px solid rgba(153, 82, 31, 0.281);
+  padding: 2%;
+}
 
-    .contact span {
-      font-size: large;
-      color: theme("colors.primary");
-    }
+.contact span {
+  font-size: large;
+  color: theme("colors.primary");
+}
 
-    .contact a {
-      font-size: large;
-      color: theme("colors.primary");
-    }
+.contact a {
+  font-size: large;
+  color: theme("colors.primary");
+}
+
+@media screen and (max-width: 765px) {
+  .contPrinc{
+    margin-left: 180px;
+  }
+  .patua{
+    font-size: 2em;
+    margin-left: 20px;
+  }
+  .contLinks{
+    padding: 20px;
+  }
+}
+
+@media  screen and (max-width:680px) {
+  .contLinks{
+    padding: 10px;
+    font-size: 1em;
+  }
+  .contact span {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+.contPrinc{
+  margin-left: 30px;
+}
+.contContact{
+  display: flex;
+  flex-direction: column;
+}
+.contact span{
+  font-size: 1em;
+}
+}

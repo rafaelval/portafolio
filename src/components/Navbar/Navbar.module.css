@@ -1,7 +1,11 @@
 .contPrinc {
   background-color: theme("colors.secondary");
-  width: 15vw;
-  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
 }
 
 .patua {
@@ -34,4 +38,54 @@
 
 .businessCard p {
   font-size: 1rem;
+}
+
+@media screen and (max-width:1000px){
+  .contPrinc{
+    width: 160px;
+  }
+  .businessCard p{
+    padding-left: 10%;
+  }
+  .contPrinc p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:860px){
+  .contPrinc{
+    width: 160px;
+  }
+  .businessCard p{
+    padding-left: 10%;
+  }
+  .contPrinc p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+@media screen and (max-width:430px){
+  .contPrinc  {
+   width: 150px;
+   background-color: #272727c2;
+   height: 100vh;
+  }
+
+  .logo {
+    opacity: calc(60%);
+  }
+}
+
+@media screen and (max-width:412px){
+  .contPrinc  {
+   width: 150px;
+   background-color: #2727279d;
+   height: 100vh;
+  }
+
+  .logo {
+    opacity: calc(60%);
+  }
 }
