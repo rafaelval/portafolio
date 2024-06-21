@@ -2,7 +2,7 @@ import { EN, ES, MENUTRIGGER } from "./constants";
 
 const initialState = {
   lang: "es",
-  menuOpen: true,
+  menuOpen: false,
 };
 
 const reducer = (state = initialState, action) => {

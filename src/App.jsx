@@ -8,11 +8,19 @@ import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 import styles from './App.module.css'
 import { useDispatch, useSelector } from "react-redux";
 import { handleMenu } from "./redux/actions";
+import { useEffect } from "react";
 
 export const App = () => {
   const dispatch =  useDispatch()
+  const width = window.innerWidth
 
   const menu = useSelector((state) =>state.menuOpen)
+
+  useEffect(() => {
+    if(width > 430){
+      dispatch(handleMenu(true))
+    }// eslint-disable-next-line
+}, [width]);
 
   const toggleMenu = ()=>{
       dispatch(handleMenu(!menu))

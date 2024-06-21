@@ -84,6 +84,9 @@
   .listItem {
     width: 100px;
   }
+  .listCont h3{
+    font-size: 0.7em;
+  }
   .patua {
     font-size: 1.7em;
   }
