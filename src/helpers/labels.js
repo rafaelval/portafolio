@@ -6,7 +6,7 @@ export const labels = {
     content_text:
       "Me gustan los retos, el buen trabajo competitivo en equipo y el aprendizaje diario que conlleva el mundo de la programación. Soy un hombre que confía en sí mismo que gusta hacer frente a la resolución de problemas.",
     content_text_2:
-      "Siempre estoy abierto a escuchar a otros y dispuesto a dar aportes relevantes, me gusta ver un equipo que trabaja unido.",
+      "Siempre estoy abierto a escuchar a otros y dispuesto a dar aportes relevantes, me gusta cuando las personas trabajan de forma coordinada y organizada.",
     content_text_3:
       "Me enfoco en el desarrollo web basado en las tecnologías mas vistas en el momento, con crecimiento personal permanente en cuanto a aprendizaje de las mismas se refiere, e investigando nuevas posibilidades a diario.",
     home_text: "Inicio",
@@ -31,7 +31,7 @@ export const labels = {
     content_text:
       "I like challenges, the good competitive teamwork and daily learning that the world of programming entails. I am a self-confident man who likes to tackle problem solving.",
     content_text_2:
-      "I am always open to listening to others and willing to give relevant contributions, I like to see a team that works together.",
+      "I am always open to listening to others and willing to give relevant contributions. I like when people work in a coordinated and organized way.",
     content_text_3:
       "I focus on web development based on the most popular technologies at the moment, with permanent personal growth in terms of learning them, and investigating new possibilities everyday.",
     home_text: "Home",
