@@ -1,0 +1,61 @@
+.img {
+  height: 200px;
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.cardTitle {
+  display: flex;
+  background-color: theme("colors.secondary");
+  justify-content: center;
+  font-family: "Patua One", serif;
+  font-style: normal;
+  color: theme("colors.primary");
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.card {
+  min-height: 400px;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 300px;
+  margin: 15px;
+  background-color: rgba(141, 141, 141, 0.5);
+  border-radius: 5px;
+}
+
+.description {
+  min-height: 100px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: theme("colors.terciary");
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.links {
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 0 5px;
+  cursor: pointer;
+}
+
+.links a {
+  background-color: theme("colors.secondary");
+  padding-left: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: "Patua One", serif;
+  font-style: normal;
+  color: theme("colors.primary");
+  font-size: 1.2em;
+}

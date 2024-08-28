@@ -1,0 +1,8 @@
+.contPrinc{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 18%;
+      margin-top: 6%;
+      width: 100%;
+      padding: 10px;
+}

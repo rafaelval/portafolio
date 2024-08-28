@@ -23,6 +23,8 @@ export const labels = {
     phone_number: "(+57)3006703425",
     email: "Correo electrónico:",
     mail: "rafael.valbuena.restrepo@gmail.com",
+    go_page:"Ir a la página",
+    github:"Ver en github"
   },
   en: {
     about: "About me",
@@ -48,5 +50,7 @@ export const labels = {
     phone_number: "(+57)3006703425",
     email: "Email:",
     mail: "rafael.valbuena.restrepo@gmail.com",
+    go_page:"Go to the website",
+    github:"Checkout on github"
   },
 };
