@@ -6,8 +6,8 @@ export const sites = [
   {
     url: "https://actual-weather.web.app/",
     description: {
-      es: "Es una SPA diseñada en React.Js con redux, que muestra en tiempo real el clima en cualquier ciudad consumiendo datos de una api externa, también muestra la hora actual en las ciudades principales.",
-      en: "This is a SPA designed in React.Js with redux, which shows the weather in any city in real time consuming data from an external API, it also shows the current time in the main cities.",
+      es: "Es una SPA diseñada en React.Js, que muestra en tiempo real el clima en cualquier ciudad consumiendo datos de una api externa, también muestra la hora actual en las ciudades principales.",
+      en: "This is a SPA designed in React.Js, which shows the weather in any city in real time consuming data from an external API, it also shows the current time in the main cities.",
     },
     title: "ACTUAL WEATHER",
     image: weather,
