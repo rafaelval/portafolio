@@ -20,7 +20,7 @@
 }
 
 .card {
-  min-height: 400px;
+  min-height: 470px;
   box-sizing: border-box;
   padding: 5px;
   width: 300px;
@@ -58,4 +58,46 @@
   font-style: normal;
   color: theme("colors.primary");
   font-size: 1.2em;
+}
+
+@media screen and (max-width:850px){
+  .card{width: 250px;}
+}
+@media screen and (max-width:720px){
+  .card{
+    width: 200px;
+    margin-left: 20%;
+    margin-top: 20%;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width:585px){
+  .card{
+    width: 180px;
+    margin-left: 28%;
+    margin-top: 20%;
+    max-height: 250px;
+  }
+  .img{
+    height: 20%;
+  }
+  .links{
+    padding-bottom: -10px;
+  }
+}
+
+@media screen and (max-width:420px){
+  .card{
+    width: 280px;
+    margin-left: 10%;
+    margin-top: 20%;
+    max-height: 250px;
+  }
+  .img{
+    height: 20%;
+  }
+  .links{
+    padding-bottom: -10px;
+  }
 }

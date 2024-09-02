@@ -6,3 +6,11 @@
       width: 100%;
       padding: 10px;
 }
+
+@media screen and (max-width:420px){
+      .contPrinc{
+        margin-left: 15px;
+        
+      }
+     
+    }

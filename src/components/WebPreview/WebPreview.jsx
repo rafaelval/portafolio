@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./WebPreview.module.css";
 
-const WebPreview = ({
+const WebPreview  = ({
   title,
   image,
   description,
   goto,
   url,
-  githubUrl,
+  githubUrl = '',
   github,
+  available
 }) => {
   return (
     <div className={styles.card}>
@@ -19,9 +20,9 @@ const WebPreview = ({
         <a href={url} target="_blank" rel="noreferrer">
           {goto}
         </a>
-        <a href={githubUrl} target="_blank" rel="noreferrer">
+        {available === "active" && <a href={githubUrl} target="_blank" rel="noreferrer">
           {github}
-        </a>
+        </a>}
       </div>
     </div>
   );
