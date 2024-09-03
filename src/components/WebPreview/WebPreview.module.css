@@ -92,7 +92,7 @@
     width: 280px;
     margin-left: 10%;
     margin-top: 20%;
-    max-height: 250px;
+    min-height: 440px;
   }
   .img{
     height: 20%;

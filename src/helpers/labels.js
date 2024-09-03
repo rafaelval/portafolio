@@ -24,7 +24,9 @@ export const labels = {
     email: "Correo electrónico:",
     mail: "rafael.valbuena.restrepo@gmail.com",
     go_page:"Ir a la página",
-    github:"Ver en github"
+    github:"Ver en github",
+    download_cv:"Mi hoja de vida",
+    download:"Descargar hoja de vida"
   },
   en: {
     about: "About me",
@@ -51,6 +53,8 @@ export const labels = {
     email: "Email:",
     mail: "rafael.valbuena.restrepo@gmail.com",
     go_page:"Go to the website",
-    github:"Checkout on github"
+    github:"Checkout on github",
+    download_cv:"My curriculum",
+    download:"Download curriculum"
   },
 };

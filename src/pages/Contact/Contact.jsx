@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { labels } from "../../helpers/labels";
+import pdfFile from "../../helpers/curriculum-rafael-valbuena.pdf"
 
 export const Contact = () => {
   const lang = useSelector((state) => state.lang);
@@ -66,6 +67,13 @@ export const Contact = () => {
             className=" hover:text-white"
           >
             {labels[lang].mail}
+          </a>
+        </div>
+        <div className={styles.contact}>
+          <span className="color-primary">{labels[lang].download_cv}</span>
+          <br />
+          <a href={pdfFile} download className=" hover:text-white">
+            {labels[lang].download}
           </a>
         </div>
       </div>
