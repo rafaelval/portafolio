@@ -16,9 +16,9 @@ export const Contact = () => {
       <p className={styles.kode_mono}>{labels[lang].wish_contact}</p>
       <div className="flex justify-around w-3/4 h-40 ">
         <a
-          href="https://github.com/rafaelval"
-          target="blank"
-          className={styles.contLinks}
+        onClick={() => window.open('https://github.com/rafaelval', '_blank')}
+        className={styles.contLinks}
+        style={{ cursor: 'pointer' }}
         >
           <div className="flex flex-col items-center transition-colors duration-300 hover:text-white">
             <span className="group-hover:text-white">
@@ -28,9 +28,9 @@ export const Contact = () => {
           </div>
         </a>
         <a
-          href="https://www.linkedin.com/in/rafael-valbuena-restrepo-ba3b242a0/"
-          target="blank"
-          className={styles.contLinks}
+        onClick={() => window.open('https://www.linkedin.com/in/rafael-valbuena-restrepo-ba3b242a0/', '_blank')}
+        className={styles.contLinks}
+        style={{ cursor: 'pointer' }}
         >
           <div className="flex flex-col items-center transition-colors duration-300 hover:text-sky-500">
             <span className="group-hover:text-sky-500">
@@ -40,9 +40,9 @@ export const Contact = () => {
           </div>
         </a>
         <a
-          href="https://api.whatsapp.com/send/?phone=573006703425"
-          target="blank"
+          onClick={() => window.open('https://api.whatsapp.com/send/?phone=573006703425', '_blank')}
           className={styles.contLinks}
+          style={{ cursor: 'pointer' }}
         >
           <div className="flex flex-col items-center transition-colors duration-300 hover:text-green-500">
             <span className="group-hover:text-green-500">
