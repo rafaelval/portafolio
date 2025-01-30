@@ -19,8 +19,8 @@ export const sites = [
   {
     url: "https://cotizador.integrarcctv.com/",
     description: {
-      es: "Es un cotizador online hecho en next.Js que hace las peticiones directamente al Wordpress de la pagina 'integrarCCTV' para consultar disponibilidad, permite registro de usuarios y creacion en pdf del pedido.",
-      en: "It is an online quote made in next.Js that makes requests directly to Wordpress from the 'integrateCCTV' page to check availability, allows user registration and creation of the order in PDF.",
+      es: "Es un cotizador online hecho en next.Js que hace las peticiones directamente al Wordpress de la pagina 'integrar CCTV' para consultar disponibilidad, permite registro de usuarios y creacion en pdf del pedido.",
+      en: "It is an online quote made in next.Js that makes requests directly to Wordpress from the 'integrar CCTV' page to check availability, allows user registration and creation of the order in PDF.",
     },
     title: "Cotizador Online",
     image: cotizador,
