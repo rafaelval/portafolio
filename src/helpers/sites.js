@@ -3,6 +3,7 @@ import labirinth from "../images/labyrinth.png";
 import gifsearch from "../images/gifsearch.png";
 import cotizador from '../images/cotizador.png'
 import integrar from '../images/integrar.png'
+import cibertech from '../images/cibertech.png'
 
 export const sites = [
   {
@@ -59,5 +60,16 @@ export const sites = [
     image: gifsearch,
     github: "https://github.com/rafaelval/gifsearch",
     available:"active"
+  },
+  {
+    url: "https://cibertechsolucion.com.co/",
+    description: {
+      es: "Esta página ha sido creada para un cliente en WordPress con elementor para un sitio que brinda servicios de seguridad informática, con opciones para envío de correos o comunicacion via whatsapp",
+      en: "This page was created for a client in WordPress with Elementor for a site that provides computer security services, with options for sending emails or communicating via WhatsApp.",
+    },
+    title: "CIBERTECH",
+    image: cibertech,
+    github: "",
+    available:"inactive"
   },
 ];
