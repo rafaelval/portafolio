@@ -5,9 +5,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { labels } from "../../helpers/labels";
 import pdfFile from "../../helpers/curriculum-rafael-valbuena.pdf"
+import pdfFileI from "../../helpers/curriculum-rafael-valbuena-I.pdf"
 
 export const Contact = () => {
   const lang = useSelector((state) => state.lang);
+  const selectedPDF = lang === "en" ? pdfFileI : pdfFile;
 
   return (
     <div className={styles.contPrinc}>
@@ -72,7 +74,7 @@ export const Contact = () => {
         <div className={styles.contact}>
           <span className="color-primary">{labels[lang].download_cv}</span>
           <br />
-          <a href={pdfFile} download className=" hover:text-white">
+          <a href={selectedPDF} download className=" hover:text-white">
             {labels[lang].download}
           </a>
         </div>
