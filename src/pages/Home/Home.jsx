@@ -11,12 +11,12 @@ export const Home = () => {
       <h1 className={styles.patua}>{labels[lang].about}</h1>
       <div className={styles.contSec}>
         <div className={styles.card}>
-          <h3 className={`${styles.kode_mono} ${styles.kode_mono_title}`}>
-            {labels[lang].greeting_text}
-          </h3>
           <h2 className={`${styles.kode_mono} ${styles.kode_mono_title}`}>
             {labels[lang].name_label}
           </h2>
+          <h3 className={`${styles.kode_mono_subtitle}`}>
+            {labels[lang].developer}
+          </h3>
           <br />
           <p className={styles.kode_mono}>{labels[lang].content_text}</p>
           <br />

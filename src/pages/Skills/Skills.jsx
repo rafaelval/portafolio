@@ -6,7 +6,7 @@ import { labels } from "../../helpers/labels";
 export const Skills = () => {
   const lang = useSelector((state) => state.lang);
   return (
-    <div className="flex flex-col items-center w-85 pt-28">
+    <div className="flex flex-col items-center w-85 pt-28 pb-12">
       <h2 className={styles.patua}>{labels[lang].known_skills}</h2>
       <ul className={styles.listCont}>
         {skills.map((el, i) => (

@@ -4,6 +4,7 @@ import gifsearch from "../images/gifsearch.png";
 import cotizador from '../images/cotizador.png'
 import integrar from '../images/integrar.png'
 import cibertech from '../images/cibertech.png'
+import auth_dashboard from '../images/auth_dashboard.png'
 
 export const sites = [
   {
@@ -71,5 +72,16 @@ export const sites = [
     image: cibertech,
     github: "",
     available:"inactive"
+  },
+  {
+    url: "https://auth-dashboard-rafael.vercel.app/login",
+    description: {
+      es: "Panel administrativo desarrollado en React + TypeScript con autenticación real, rutas protegidas y gestión de usuarios (CRUD). Incluye persistencia de sesión, configuración global de tema e idioma y estado manejado con Zustand, el stack usado: React · TypeScript · Zustand · Tailwind · React Router · i18n",
+      en: "Administrative panel developed in React and TypeScript with real authentication, protected routes, and user management (CRUD). Includes session persistence, global theme and language settings, and state management with Zustand. The stack used is: React, TypeScript, Zustand, Tailwind, React Router, and i18n.",
+    },
+    title: "AUTH-DASHBOARD",
+    image: auth_dashboard,
+    github: "https://github.com/rafaelval/auth-dashboard",
+    available:"active"
   },
 ];
