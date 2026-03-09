@@ -5,6 +5,7 @@ import cotizador from '../images/cotizador.png'
 import integrar from '../images/integrar.png'
 import cibertech from '../images/cibertech.png'
 import auth_dashboard from '../images/auth_dashboard.png'
+import ecommerce from '../images/e-shop.png'
 
 export const sites = [
   {
@@ -28,6 +29,39 @@ export const sites = [
     image: cotizador,
     github: "",
     available:"inactive"
+  },
+  {
+    url: "https://cibertechsolucion.com.co/",
+    description: {
+      es: "Esta página ha sido creada para un cliente en WordPress con elementor para un sitio que brinda servicios de seguridad informática, con opciones para envío de correos o comunicacion via whatsapp",
+      en: "This page was created for a client in WordPress with Elementor for a site that provides computer security services, with options for sending emails or communicating via WhatsApp.",
+    },
+    title: "CIBERTECH",
+    image: cibertech,
+    github: "",
+    available:"inactive"
+  },
+  {
+    url: "https://auth-dashboard-rafael.vercel.app/login",
+    description: {
+      es: "Panel administrativo desarrollado en React + TypeScript con autenticación real, rutas protegidas y gestión de usuarios (CRUD). Incluye persistencia de sesión, configuración global de tema e idioma y estado manejado con Zustand, el stack usado: React · TypeScript · Zustand · Tailwind · React Router · i18n",
+      en: "Administrative panel developed in React and TypeScript with real authentication, protected routes, and user management (CRUD). Includes session persistence, global theme and language settings, and state management with Zustand. The stack used is: React, TypeScript, Zustand, Tailwind, React Router, and i18n.",
+    },
+    title: "AUTH-DASHBOARD",
+    image: auth_dashboard,
+    github: "https://github.com/rafaelval/auth-dashboard",
+    available:"active"
+  },
+  {
+    url: "https://villabuena-e-shop.vercel.app/?page=1",
+    description: {
+      es: "Aplicación de comercio electrónico desarrollada en React que permite explorar productos, filtrarlos por categorías y gestionar un carrito de compras interactivo con flujo completo de checkout. Incluye autenticación de usuarios y manejo global del estado para mantener la persistencia de datos.",
+      en: "An e-commerce application developed in React that allows users to browse products, filter them by category, and manage an interactive shopping cart with a complete checkout flow. It includes user authentication and global state management to maintain data persistence.",
+    },
+    title: "E-COMMERCE",
+    image: ecommerce,
+    github: "https://github.com/rafaelval/Villa-buena-ecommerce",
+    available:"active"
   },
   {
     url: "https://actual-weather.web.app/",
@@ -60,28 +94,6 @@ export const sites = [
     title: "GIF SEARCH",
     image: gifsearch,
     github: "https://github.com/rafaelval/gifsearch",
-    available:"active"
-  },
-  {
-    url: "https://cibertechsolucion.com.co/",
-    description: {
-      es: "Esta página ha sido creada para un cliente en WordPress con elementor para un sitio que brinda servicios de seguridad informática, con opciones para envío de correos o comunicacion via whatsapp",
-      en: "This page was created for a client in WordPress with Elementor for a site that provides computer security services, with options for sending emails or communicating via WhatsApp.",
-    },
-    title: "CIBERTECH",
-    image: cibertech,
-    github: "",
-    available:"inactive"
-  },
-  {
-    url: "https://auth-dashboard-rafael.vercel.app/login",
-    description: {
-      es: "Panel administrativo desarrollado en React + TypeScript con autenticación real, rutas protegidas y gestión de usuarios (CRUD). Incluye persistencia de sesión, configuración global de tema e idioma y estado manejado con Zustand, el stack usado: React · TypeScript · Zustand · Tailwind · React Router · i18n",
-      en: "Administrative panel developed in React and TypeScript with real authentication, protected routes, and user management (CRUD). Includes session persistence, global theme and language settings, and state management with Zustand. The stack used is: React, TypeScript, Zustand, Tailwind, React Router, and i18n.",
-    },
-    title: "AUTH-DASHBOARD",
-    image: auth_dashboard,
-    github: "https://github.com/rafaelval/auth-dashboard",
     available:"active"
   },
 ];
