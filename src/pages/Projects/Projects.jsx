@@ -5,7 +5,7 @@ import { sites } from '../../helpers/sites';
 import styles from './Projects.module.css'
 import { labels } from '../../helpers/labels';
 
-export const Projects = () => {
+const Projects = () => {
   const { lang } = useContext(AppContext);
   return (
     <div className={styles.contPrinc}>
@@ -16,4 +16,6 @@ export const Projects = () => {
       ))}
     </div>
   )
-}
+};
+
+export { Projects };

@@ -8,7 +8,7 @@ import { labels } from "../../helpers/labels";
 import pdfFile from "../../helpers/curriculum-rafael-valbuena.pdf"
 import pdfFileI from "../../helpers/curriculum-rafael-valbuena-I.pdf"
 
-export const Contact = () => {
+const Contact = () => {
   const { lang } = useContext(AppContext);
   const selectedPDF = lang === "en" ? pdfFileI : pdfFile;
 
@@ -18,10 +18,10 @@ export const Contact = () => {
       <div className={styles.divLine} />
       <p className={styles.kode_mono}>{labels[lang].wish_contact}</p>
       <div className="flex justify-around w-3/4 h-40 ">
-        <a
-        onClick={() => window.open('https://github.com/rafaelval', '_blank')}
+        <button
+        onClick={(e) => { e.preventDefault(); window.open('https://github.com/rafaelval', '_blank'); }}
         className={styles.contLinks}
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: 'pointer', background: 'none', border: 'none', padding: 0 }}
         >
           <div className="flex flex-col items-center transition-colors duration-300 hover:text-white">
             <span className="group-hover:text-white">
@@ -29,11 +29,11 @@ export const Contact = () => {
             </span>
             <h2 className="font-bold group-hover:text-white">Github</h2>
           </div>
-        </a>
-        <a
-        onClick={() => window.open('https://www.linkedin.com/in/rafael-valbuena-restrepo-ba3b242a0/', '_blank')}
+        </button>
+        <button
+        onClick={(e) => { e.preventDefault(); window.open('https://www.linkedin.com/in/rafael-valbuena-restrepo-ba3b242a0/', '_blank'); }}
         className={styles.contLinks}
-        style={{ cursor: 'pointer' }}
+        style={{ cursor: 'pointer', background: 'none', border: 'none', padding: 0 }}
         >
           <div className="flex flex-col items-center transition-colors duration-300 hover:text-sky-500">
             <span className="group-hover:text-sky-500">
@@ -41,11 +41,11 @@ export const Contact = () => {
             </span>
             <h2 className="font-bold group-hover:text-sky-700">Linkedin</h2>
           </div>
-        </a>
-        <a
-          onClick={() => window.open('https://api.whatsapp.com/send/?phone=573006703425', '_blank')}
+        </button>
+        <button
+          onClick={(e) => { e.preventDefault(); window.open('https://api.whatsapp.com/send/?phone=573006703425', '_blank'); }}
           className={styles.contLinks}
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: 'pointer', background: 'none', border: 'none', padding: 0 }}
         >
           <div className="flex flex-col items-center transition-colors duration-300 hover:text-green-500">
             <span className="group-hover:text-green-500">
@@ -53,7 +53,7 @@ export const Contact = () => {
             </span>
             <h2 className="font-bold group-hover:text-green-500">WhatsApp</h2>
           </div>
-        </a>
+        </button>
       </div>
 
       <div className={styles.contContact}>
@@ -83,3 +83,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export { Contact };

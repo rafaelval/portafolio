@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 import foto from "../../images/foto.jpg";
 import { AppContext } from "../../context/AppContext";
 
-export const Home = () => {
+const Home = () => {
   const { lang } = useContext(AppContext);
 
   return (
@@ -32,3 +32,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export { Home };

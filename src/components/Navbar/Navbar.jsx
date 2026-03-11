@@ -3,11 +3,11 @@ import logo from "../../images/logo.png";
 import styles from "./Navbar.module.css";
 import { getMenu } from "./menu";
 import { labels } from "../../helpers/labels";
-import { useContext } from "react";
+import { useContext, memo } from "react";
 import { AppContext } from "../../context/AppContext";
 
 
-export const NavBar = () => {
+const NavBarComponent = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { lang } = useContext(AppContext);
@@ -45,3 +45,5 @@ export const NavBar = () => {
     </div>
   );
 };
+
+export const NavBar = memo(NavBarComponent);

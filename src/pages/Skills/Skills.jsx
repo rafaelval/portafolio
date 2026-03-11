@@ -4,7 +4,7 @@ import styles from "./Skills.module.css";
 import { labels } from "../../helpers/labels";
 import { AppContext } from "../../context/AppContext";
 
-export const Skills = () => {
+const Skills = () => {
   const { lang } = useContext(AppContext);
   return (
     <div className="flex flex-col items-center w-85 pt-28 pb-12">
@@ -33,3 +33,5 @@ export const Skills = () => {
     </div>
   );
 };
+
+export { Skills };

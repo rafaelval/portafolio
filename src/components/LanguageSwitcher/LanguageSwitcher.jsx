@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, memo, useCallback } from "react";
 import { AppContext } from "../../context/AppContext";
 import es from "../../images/es.png";
 import en from "../../images/en.png";
 
-const LanguageSwitcher = () => {
+const LanguageSwitcherComponent = () => {
   const { lang, changeLang } = useContext(AppContext);
 
-  const toggleLanguage = () => {
+  const toggleLanguage = useCallback(() => {
     changeLang(lang === "es" ? "en" : "es");
-  };
+  }, [lang, changeLang]);
 
   return (
     <div className="absolute z-50 flex items-center justify-center p-4 space-x-4 right-3 top-5">
@@ -28,4 +28,4 @@ const LanguageSwitcher = () => {
   );
 };
 
-export default LanguageSwitcher;
+export default memo(LanguageSwitcherComponent);
