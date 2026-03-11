@@ -1,10 +1,11 @@
-import { useSelector } from "react-redux";
+import { useContext } from "react";
 import { skills, skillsToLearn } from "../../helpers/skills.labels";
 import styles from "./Skills.module.css";
 import { labels } from "../../helpers/labels";
+import { AppContext } from "../../context/AppContext";
 
 export const Skills = () => {
-  const lang = useSelector((state) => state.lang);
+  const { lang } = useContext(AppContext);
   return (
     <div className="flex flex-col items-center w-85 pt-28 pb-12">
       <h2 className={styles.patua}>{labels[lang].known_skills}</h2>

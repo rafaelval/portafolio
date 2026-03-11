@@ -6,33 +6,31 @@ import { Projects } from "./pages/Projects/Projects";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 import styles from './App.module.css'
-import { useDispatch, useSelector } from "react-redux";
-import { handleMenu } from "./redux/actions";
-import { useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
+import { AppContext } from "./context/AppContext";
 
 export const App = () => {
-  const dispatch =  useDispatch()
-  const width = window.innerWidth
-
-  const menu = useSelector((state) =>state.menuOpen)
+  const { menuOpen, toggleMenu } = useContext(AppContext);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if(width > 430){
-      dispatch(handleMenu(true))
-    }// eslint-disable-next-line
-}, [width]);
+    const handleResize = () => {
+      const isSmallScreen = window.innerWidth <= 430;
+      setIsMobile(isSmallScreen);
+      if (!isSmallScreen && !menuOpen) {
+        toggleMenu(true);
+      }
+    };
 
-  const toggleMenu = ()=>{
-      dispatch(handleMenu(!menu))
-  }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [menuOpen, toggleMenu]);
 
   return (
     <div className="flex">
-      <GiHamburgerMenu className={styles.hamburguerIcon} onClick={()=>toggleMenu()}/>
-        {
-          menu && 
-      <NavBar />
-        }
+      <GiHamburgerMenu className={styles.hamburguerIcon} onClick={() => toggleMenu(!menuOpen)} />
+      {menuOpen && <NavBar />}
       <LanguageSwitcher />
       <Routes>
         <Route path={routes.home} element={<Home />} />

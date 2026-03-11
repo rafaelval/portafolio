@@ -1,19 +1,13 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { setLanguage } from "../../redux/actions";
+import React, { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 import es from "../../images/es.png";
 import en from "../../images/en.png";
 
 const LanguageSwitcher = () => {
-  const dispatch = useDispatch();
-  const lang = useSelector((state) => state.lang);
+  const { lang, changeLang } = useContext(AppContext);
 
   const toggleLanguage = () => {
-    if (lang === "es") {
-      dispatch(setLanguage("en"));
-    } else {
-      dispatch(setLanguage("es"));
-    }
+    changeLang(lang === "es" ? "en" : "es");
   };
 
   return (

@@ -1,11 +1,12 @@
-import { useSelector } from 'react-redux';
+import { useContext } from 'react';
+import { AppContext } from '../../context/AppContext';
 import WebPreview from '../../components/WebPreview/WebPreview'
 import { sites } from '../../helpers/sites';
 import styles from './Projects.module.css'
 import { labels } from '../../helpers/labels';
 
 export const Projects = () => {
-  const lang = useSelector((state) => state.lang);
+  const { lang } = useContext(AppContext);
   return (
     <div className={styles.contPrinc}>
       {sites.map((site, index) => (

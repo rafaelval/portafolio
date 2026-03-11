@@ -2,13 +2,14 @@ import styles from "./Contact.module.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { useSelector } from "react-redux";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 import { labels } from "../../helpers/labels";
 import pdfFile from "../../helpers/curriculum-rafael-valbuena.pdf"
 import pdfFileI from "../../helpers/curriculum-rafael-valbuena-I.pdf"
 
 export const Contact = () => {
-  const lang = useSelector((state) => state.lang);
+  const { lang } = useContext(AppContext);
   const selectedPDF = lang === "en" ? pdfFileI : pdfFile;
 
   return (

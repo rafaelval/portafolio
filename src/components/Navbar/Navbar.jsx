@@ -3,13 +3,14 @@ import logo from "../../images/logo.png";
 import styles from "./Navbar.module.css";
 import { getMenu } from "./menu";
 import { labels } from "../../helpers/labels";
-import { useSelector } from "react-redux";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
 
 export const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const lang = useSelector((state) => state.lang);
+  const { lang } = useContext(AppContext);
   
 
   function handleChangePage(page) {
