@@ -5,6 +5,7 @@ import { routes } from "./routes/routes";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 import { Loading } from "./components/Loading/Loading";
+import { BackgroundManager } from "./components/BackgroundManager";
 import styles from './App.module.css'
 import { useContext, useEffect } from "react";
 import { AppContext } from "./context/AppContext";
@@ -34,6 +35,7 @@ export const App = () => {
 
   return (
     <div className="flex">
+      <BackgroundManager />
       <GiHamburgerMenu className={styles.hamburguerIcon} onClick={() => toggleMenu(!menuOpen)} />
       {menuOpen && <NavBar />}
       <LanguageSwitcher />

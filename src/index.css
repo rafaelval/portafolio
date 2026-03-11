@@ -20,16 +20,9 @@ body {
   user-select: none;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1a1a1a;
-  background-image: url(../public/background.jpg);
   background-size: auto;
   background-attachment: fixed;
   background-position: center;
-}
-
-@supports (background-image: url(data:image/webp;base64,UklGRiYAAABXEBP)) {
-  body {
-    background-image: url(../public/background.webp);
-  }
 }
 
 code {
