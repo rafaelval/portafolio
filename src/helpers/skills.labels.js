@@ -142,3 +142,22 @@ export const skillsToLearn = [
     link: "https://dotnet.microsoft.com/es-es/languages/csharp",
   },
 ];
+
+export const certificates = [
+  {
+    id: 1,
+    title: "Certificado de Iniciación al Desarrollo con IA",
+    institution: "BIG school",
+    date: "13/03/2026",
+    duration: "6 horas",
+    file: "/certificates/Certificado-rafael-valbuena-restrepo-k3lgdk2e.pdf", 
+  },
+  {
+    id: 2,
+    title: "Front-End Development – Fundamentals",
+    institution: "EPAM Campus",
+    date: "26/11/2024",
+    duration: null,
+    file: "/certificates/certificate_27e1150f-4d2e-48f8-b0d6-d1720f62127e.pdf",
+  },
+];

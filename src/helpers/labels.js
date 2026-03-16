@@ -26,7 +26,9 @@ export const labels = {
     go_page:"Ir a la página",
     github:"Ver en github",
     download_cv:"Mi hoja de vida",
-    download:"Descargar hoja de vida"
+    download:"Descargar hoja de vida",
+    certificates: "Certificaciones",
+    view_certificate: "Ver certificado",
   },
   en: {
     about: "About me",
@@ -55,6 +57,8 @@ export const labels = {
     go_page:"Go to the website",
     github:"Checkout on github",
     download_cv:"My curriculum",
-    download:"Download curriculum"
+    download:"Download curriculum",
+    certificates: "Certifications",
+    view_certificate: "View certificate", 
   },
 };
