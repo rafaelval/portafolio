@@ -88,8 +88,8 @@ export const sites = [
   {
     url: "https://gifsearch-rafa.web.app/",
     description: {
-      es: "Un buscador de imagenes gif, el cual consume la api de tenor.com, la interfaz permite copiar los gif para pegarlos directamente en redes sociales o sitios web",
-      en: "A gif image search engine, which consumes the tenor.com API, the interface allows you to copy the gifs to paste them directly into social networks or websites.",
+      es: "Un buscador de imagenes gif, el cual consume la api de klipy.com, la interfaz permite copiar los gif para pegarlos directamente en redes sociales o sitios web",
+      en: "A gif image search engine, which consumes the klipy.com API, the interface allows you to copy the gifs to paste them directly into social networks or websites.",
     },
     title: "GIF SEARCH",
     image: gifsearch,
